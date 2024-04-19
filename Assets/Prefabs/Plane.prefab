@@ -161,6 +161,7 @@ GameObject:
   - component: {fileID: 2040611453904936847}
   - component: {fileID: 3219505771615338529}
   - component: {fileID: 3440357110882988709}
+  - component: {fileID: 294069948}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -221,6 +222,41 @@ MonoBehaviour:
   hoverAcceleration: 2
   rollSpeed: 85
   rollAcceleration: 3
+--- !u!114 &294069948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4259791144113535777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1213f5ce647548d40994bbd6a4ec84d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4259791144113535777}
+  PuntoInicio: {x: 1.32, y: 17.88, z: -5.85}
+  greenCheckPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  yellowCheckPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  redCheckPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  blueCheckPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  score: 0
 --- !u!1001 &8939998624136709669
 PrefabInstance:
   m_ObjectHideFlags: 0
