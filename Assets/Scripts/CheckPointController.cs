@@ -99,5 +99,10 @@ public class CheckPointController : MonoBehaviour
     void updatePoints()
     {
         score.text = "Puntaje: " + scoreCount.ToString();
+
+        if (scoreCount == 16)
+        {
+            score.text = "¡¡HAS GANADO!!";
+        }
     }
 }
