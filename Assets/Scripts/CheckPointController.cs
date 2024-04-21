@@ -45,7 +45,8 @@ public class CheckPointController : MonoBehaviour
         if (currentCheckPoints.Contains(other.gameObject))
         {
             Vector3 vectorPoint = player.transform.position;
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            Destroy(other.transform.parent.gameObject);  //Para detruir todo el aro/target
             nextCheckPointIndex++;
             scoreCount++;
 
@@ -77,7 +78,7 @@ public class CheckPointController : MonoBehaviour
      * los checkpoints actuales con los checkpoints verdes.*/
     private void ReseT()
     {
-        Debug.Log("¡¡PERDISTES EL JUEGO, VUELVALO A INTENTAR!!.");
+        Debug.Log("¡¡PERDISTE EL JUEGO, VUELVALO A INTENTAR!!.");
         nextCheckPointIndex = 0;
         player.transform.position = PuntoInicio;
         currentCheckPoints = greenCheckPoints;
